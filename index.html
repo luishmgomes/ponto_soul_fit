@@ -99,7 +99,7 @@
 <div class="wrap">
 
   <div class="brand">
-    <h1>Fotocabine & cia. · Ponto</h1>
+    <h1>Soul Fit. · Ponto</h1>
     <span class="clock" id="relogio">--:--:--</span>
   </div>
 
@@ -253,7 +253,7 @@ async function tentarRegistrarBiometria() {
     const cred = await navigator.credentials.create({
       publicKey: {
         challenge: crypto.getRandomValues(new Uint8Array(32)),
-        rp: { name: 'Ponto Fotocabine' },
+        rp: { name: 'Ponto Soul FIt' },
         user: { id: new TextEncoder().encode(sessao.id), name: sessao.nome, displayName: sessao.nome },
         pubKeyCredParams: [{ type: 'public-key', alg: -7 }],
         authenticatorSelection: { authenticatorAttachment: 'platform', userVerification: 'required' },
